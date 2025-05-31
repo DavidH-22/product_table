@@ -22,7 +22,11 @@ class Product_Controller
     }
     if ($request->filled('harga_min') && $request->filled('harga_max')) {
         $query->whereBetween('Harga', [$request->harga_min, $request->harga_max]);
-    }
+    } elseif ($request->filled('harga_min')) {
+                $query->where('Harga', '>=', $request->harga_min);
+    } elseif ($request->filled('harga_max')){
+                $query->where('Harga', '<=', $request->harga_max);
+            }
 
      $products = $query->latest()->paginate(3);
 

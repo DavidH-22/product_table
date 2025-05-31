@@ -188,6 +188,7 @@
             <option value="Elektronik">Elektronik</option>
             <option value="Pakaian">Pakaian</option>
             <option value="Makanan">Makanan</option>
+             <option value="Lainnya">Lainnya</option>
         </select>
         <input type="number" name="harga_min" placeholder="Min Price">
         <input type="number" name="harga_max" placeholder="Max Price">

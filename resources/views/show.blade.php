@@ -86,10 +86,10 @@
         <h2>Detail Produk</h2>
         <div class="details">
             <p><strong>ID:</strong> {{ $product->id }}</p>
-            <p><strong>Nama:</strong> {{ $product->nama }}</p>
-            <p><strong>Deskripsi:</strong> {{ $product->deskripsi }}</p>
-            <p><strong>Harga:</strong> Rp {{ number_format($product->harga, 0, ',', '.') }}</p>
-            <p><strong>Kategori:</strong> {{ $product->kategori }}</p>
+            <p><strong>Nama:</strong> {{ $product->Nama }}</p>
+            <p><strong>Deskripsi:</strong> {{ $product->Deskripsi }}</p>
+            <p><strong>Harga:</strong> Rp {{ number_format($product->Harga, 0, ',', '.') }}</p>
+            <p><strong>Kategori:</strong> {{ $product->Kategori }}</p>
             <p><strong>Created At:</strong> {{ $product->created_at }}</p>
             <p><strong>Updated At:</strong> {{ $product->updated_at }}</p>
         </div>
